@@ -22,12 +22,6 @@ jobs:
       - run: npm test
         env:
           CI: true
-  
-on:
-  push:
-    branches: [master]
-
-jobs:
   deploy:
     runs-on: [ubuntu-latest]
 
