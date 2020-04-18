@@ -22,13 +22,3 @@ jobs:
       - run: npm test
         env:
           CI: true
-  deploy:
-    runs-on: [ubuntu-latest]
-
-    steps:
-      - uses: actions/checkout@v2
-      - uses: artemis-tech/zeit-now-cli@v1
-        env:
-          ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
-        with:
-          args: --prod
