@@ -2,7 +2,7 @@
     "version": 2,
     "name": "covid-pool-storybook",
     "alias": "covid-pool-storybook",
-    "scope": "Martin Pastore",
+    "scope": "martinpablopastore",
     "builds": [
         {
             "src": "package.json",
