@@ -28,9 +28,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: deploy
-      uses: actions/zeit-now@master
-      env:
-        ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
+        uses: actions/zeit-now@master
+        env:
+          ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
       - name: alias
         uses: actions/zeit-now@master
         env:
