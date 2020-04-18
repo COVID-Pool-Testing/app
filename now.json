@@ -1,7 +1,8 @@
 {
     "version": 2,
-    "name": "github-action-cra",
-    "alias": "github-action-cra",
+    "name": "covid-pool-storybook",
+    "alias": "covid-pool-storybook",
+    "scope": "Martin Pastore",
     "builds": [
         {
             "src": "package.json",

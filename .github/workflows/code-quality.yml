@@ -27,9 +27,5 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: npx now --token $ZEIT_TOKEN
-        env:
-          ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
-      - run: npx now --token $ZEIT_TOKEN
-        env:
-          ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
+      - run: npm run storybook-build
+      - run: now storybook-static/ --prod -t ${{ secrets.ZEIT_TOKEN }}
