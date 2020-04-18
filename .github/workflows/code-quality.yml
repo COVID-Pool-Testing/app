@@ -33,5 +33,3 @@ jobs:
       - run: npx now --token $ZEIT_TOKEN
         env:
           ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
-        with:
-          args: alias
