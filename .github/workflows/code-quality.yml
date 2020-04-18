@@ -18,6 +18,21 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 10.x
+      - run: npm install
       - run: npm test
         env:
           CI: true
+  
+on:
+  push:
+    branches: [master]
+
+jobs:
+  deploy:
+    runs-on: [ubuntu-latest]
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install
+      - run: npm run build-storybook
+      - uses: actions/zeit-now@master
