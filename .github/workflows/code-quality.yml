@@ -27,6 +27,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: npm install
-      - run: npm run build-storybook
-      - uses: actions/zeit-now@master
+      - name: deploy
+      uses: actions/zeit-now@master
+      env:
+        ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
+      - name: alias
+        uses: actions/zeit-now@master
+        env:
+          ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
+        with:
+          args: alias
