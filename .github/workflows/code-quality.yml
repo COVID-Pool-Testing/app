@@ -27,6 +27,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: npm install
-      - run: npm run now-build
-      - run: npx now storybook-static/ --prod -t ${{ secrets.ZEIT_TOKEN }}
+      - uses: artemis-tech/zeit-now-cli@v1
+        env:
+          ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
+        with:
+          args: --prod
