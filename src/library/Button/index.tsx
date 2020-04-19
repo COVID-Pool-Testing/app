@@ -20,7 +20,7 @@ const Component = styled.button(
     padding: 1rem;
     border-radius: 30px;
     border: 2px solid ${props.primary ? "#56BEB4" : "#000"};
-    min-width: 150px;
+    min-width: 300px;
     color: ${props.color};
     font-size: 16px;
     text-transform: uppercase;

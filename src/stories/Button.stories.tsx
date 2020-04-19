@@ -18,4 +18,14 @@ storiesOf("Button", module)
       text="Click me"
       onAction={() => console.log("action")}
     ></Button>
+  ))
+  .add("primary with color white", () => (
+    <div style={{ backgroundColor: "#000", width: "300px" }}>
+      <Button
+        primary
+        color="#FFF"
+        text="Click me"
+        onAction={() => console.log("action")}
+      ></Button>
+    </div>
   ));
