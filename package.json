@@ -15,7 +15,7 @@
     "babel-loader": "^8.1.0",
     "husky": "^4.2.5",
     "jest-styled-components": "^7.0.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
